@@ -1,3 +1,6 @@
 [submodule "AnyPython"]
 	path = AnyPython
 	url = https://github.com/antibagr/Any-Python-Template.git
+[submodule "WorkShop/python-ssl-analyzer"]
+	path = WorkShop/python-ssl-analyzer
+	url = https://github.com/antibagr/python-ssl-analyzer
