@@ -7,10 +7,11 @@ from botocore.client import BaseClient
 import os
 
 
-access_key = "AKIAUCCEVLB5JCJSBGQO"
-access_secret = "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"
+access_key = ""
+access_secret = ""
+destination_email = ""
+source_email = ""
 
-# boto3.setup_default_session(profile_name="rudiemeant")
 ses_client: BaseClient = boto3.client(
     "ses",
     region_name="eu-central-1",
@@ -56,7 +57,7 @@ if BODY_TEXT_STR:
     response = ses_client.send_email(
         Destination={
             "ToAddresses": [
-                "hatehatehatehate.everything@gmail.com",  # Registered email in SES
+                destination_email,  # Registered email in SES
             ],
         },
         Message={
@@ -66,5 +67,5 @@ if BODY_TEXT_STR:
                 "Data": "SSL certificate expiration",
             },
         },
-        Source="rudiemeant@gmail.com",
+        Source=source_email,
     )
