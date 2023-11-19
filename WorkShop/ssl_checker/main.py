@@ -1,11 +1,11 @@
-import ssl, socket
-from datetime import datetime, date
+import os
+import socket
+import ssl
+from datetime import date, datetime
 
-from dateutil import parser
 import boto3
 from botocore.client import BaseClient
-import os
-
+from dateutil import parser
 
 access_key = ""
 access_secret = ""

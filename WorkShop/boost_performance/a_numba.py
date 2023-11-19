@@ -1,5 +1,6 @@
-﻿from numba import njit
-import random
+﻿import random
+
+from numba import njit
 
 
 @njit
