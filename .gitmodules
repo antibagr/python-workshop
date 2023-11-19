@@ -1,0 +1,3 @@
+[submodule "AnyPython"]
+	path = AnyPython
+	url = https://github.com/antibagr/Any-Python-Template.git

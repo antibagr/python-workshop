@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "workshop"
+version = "0.1.0"
+description = "Working on different Python's related topics: performance/optimization/library management"
+authors = ["Anton Bagrianov <rudiemeant@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.4"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "23.11.0"
+isort = "5.12.0"
+flake8 = "6.1.0"
+mypy = "1.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
